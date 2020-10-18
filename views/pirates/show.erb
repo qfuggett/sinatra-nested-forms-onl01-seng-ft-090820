@@ -1,9 +1,16 @@
 <h1>Display your Pirate here</h1>
-  <%= Pirate.name Pirate.type Pirate.height %>
-
-<h2>Display your first ship here</h2>
-
-  <%= Ship[0].name Ship[0].type Ship[0].booty %>
+  <div class = "Pirate"> 
   
-<h2>Display your second ship here</h2>
-    <%= Ship[1].name Ship[1].type Ship[1].booty %>
+  <h3>Pirate Name: <%= @pirate.name %></h3>
+  <h3>Pirate Type: <%= @pirate.type %> lbs</h3>
+  <h3>Pirate Height: <%= @pirate.height %> inches</h3>
+
+  <h2>Display your first ship here</h2>
+
+    <%= @ships[0].name @ships[0].type @ships[0].booty %>
+  
+  <h2>Display your second ship here</h2>
+    <%= @ships[1].name @ships[1].type @ships[1].booty %>
+
+  </div>
+  <br>
